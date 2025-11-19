@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/cabernal4/kube-parent.git'
-    targetRevision: main
+    targetRevision: 0.48.0
     path: strimzi-operator
     helm:
       valueFiles:
