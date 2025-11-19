@@ -70,7 +70,7 @@ spec:
           imagePullPolicy: IfNotPresent
           env:
             - name: STRIMZI_NAMESPACE
-              value: "{{ join "," .Values.strimzi.watchedNamespaces }}"
+              value: "{{ .Values.strimzi.watchedNamespaces }}"
             - name: STRIMZI_FULL_RECONCILIATION_INTERVAL_MS
               value: "120000"
             - name: STRIMZI_OPERATION_TIMEOUT_MS
