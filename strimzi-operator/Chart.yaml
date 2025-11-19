@@ -1,0 +1,5 @@
+apiVersion: v2
+name: strimzi-operator
+description: A minimal Helm chart to install the Strimzi Kafka Operator
+type: application
+version: 0.48.0
