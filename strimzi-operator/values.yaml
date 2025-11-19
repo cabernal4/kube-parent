@@ -1,7 +1,7 @@
 namespace: kafka
 
 strimzi:
-  image: quay.io/strimzi/operator:0.39.0
+  image: quay.io/strimzi/operator:0.48.0
 
   # "" means watch all namespaces
   watchedNamespaces: ["*"]
