@@ -2,9 +2,5 @@ namespace: kafka
 
 strimzi:
   image: quay.io/strimzi/operator:0.48.0
-
-  # "" means watch all namespaces
-  watchedNamespaces: ""
-
-  # Optional: change Log Level
+  watchedNamespaces: "*"
   logLevel: INFO
