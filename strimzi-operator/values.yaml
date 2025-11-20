@@ -1,6 +1,0 @@
-namespace: kafka
-
-strimzi:
-  image: quay.io/strimzi/operator:0.48.0
-  watchedNamespaces: "kafka"
-  logLevel: DEBUG
