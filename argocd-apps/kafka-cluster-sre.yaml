@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: dev-kafka-cluster
-  namespace: argocd-app-of-apps
+  namespace: kafka-sre
 spec:
   project: sre-project
   source:
