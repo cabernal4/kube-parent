@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev-kafka-cluster
+  namespace: argocd-app-of-apps
+spec:
+  project: sre-project
+  source:
+    repoURL: https://github.com/cabernal4/kube-parent.git
+    targetRevision: HEAD
+    path: kafka-cluster/manifests
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: kafka-sre
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+      - ApplyOutOfSyncOnly=true
